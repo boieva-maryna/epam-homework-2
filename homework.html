@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.9.0/css/all.css" integrity="sha384-i1LQnF23gykqWXg6jxC2ZbCbUMxyw5gLZY6UiUS98LYV5unm8GWmfkIS6jqJfb4E" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles.css">
+    <title>BlogPageTitle</title>
+</head>
+<body>
+    <div class="grid-wrp">
+        <header>
+            <div class="header__wrp">
+                    <a href="#menu"
+                    id="menu-toggle"
+                    class="menu-toggle"
+                    aria-label="Open menu">
+                   <span class="sr-only">Open main menu</span>
+                   <span class="fa fa-bars" aria-hidden="true"></span>
+                    </a>
+                <div class="logo logo--h">
+                   <img width="100" src="./img/logo.svg" alt="logo">
+                </div>
+                <ul class="soc soc--h">
+                    <li><a class="fab fa-facebook-f" href="#"></a></li>
+                    <li><a class="fab fa-youtube" href="#"></a></li>
+                    <li><a class="fab fa-instagram" href="#"></a></li>
+                </ul>
+                <a class="search search--h fas fa-search" href="#"></a>
+                <nav class="menu menu--h" id="menu">
+                    <!--Идею меню брала здесь: https://medium.com/@heyoka/responsive-pure-css-off-canvas-hamburger-menu-aebc8d11d793-->
+                        <a href="#menu-toggle"
+                        id="menu-close"
+                        class="menu-close"
+                        aria-label="Close menu">
+                       <span class="sr-only">Close main menu</span>
+                       <span class="fas fa-times" aria-hidden="true"></span>
+                        </a>
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#author">About</a></li>
+                        <li><a href="#contact">Contact us</a></li>
+                    </ul>
+                </nav>
+                <a href="#menu-toggle"
+                 class="backdrop"
+                 tabindex="-1"  hidden aria-hidden="true"></a>
+            </div>
+        </header>
+        <main>
+            <header class="main__header">
+                <h1>Top posts</h1>
+            </header>
+           <div class="main__container">
+                <article class="card">
+                        <header class="card__header">
+                            <h3>Some random post heading:1</h3>
+                            <p>1 m ago</p>
+                            <p>by <a>Tomy Gemignani</a></p>
+                        </header>
+                        <div>
+                                <div class="card__img-container">
+                                        <img class="card__img" src="./img/post1.jpg" alt=" post1">
+                                </div>
+                                    <p>
+                                        I need some text here, but I dont wanna think too much...I`ll use a template!
+                                        <strong>Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
+                                        Amet laudantium delectus sit nulla, assumenda vero nisi necessitatibus dolore, 
+                                        voluptatem voluptatum odit dicta cumque facere sapiente fugit quia esse? Consequuntur, soluta?</strong>
+                                    </p>
+                                    <p>Rating: 504 <a title="Rate!" href="#" class="fas fa-star"></a></p>
+                        </div>
+                </article>
+                <article class="card">
+                        <header class="card__header">
+                            <h3>Some random post heading:2</h3>
+                            <p>2 m ago</p>
+                            <p>by <a>Jonny Meinke</a></p>
+                        </header>
+                        <div>
+                            <div class="card__img-container">
+                                        <img class="card__img" src="img/post2.jpg" alt="post2">
+                            </div>
+                            <p>
+                                Some useful,intresting information had to be here...But for now we have <strong>"Lorem ipsum dolor, sit amet consectetur adipisicing elit. 
+                                Facere laborum commodi vitae sit impedit ea quo exercitationem eaque laboriosam dignissimos aliquid perferendis inventore, 
+                                incidunt illo explicabo ipsum quaerat, facilis sequi?"</strong>
+                            </p>
+                            <p>Rating: 446 <a title="Rate!" href="#" class="fas fa-star"></a></p>
+                        </div>
+                </article>
+                <article class="card">
+                            <header class="card__header">
+                                <h3>Some random post heading:2</h3>
+                                <p>15 d ago</p>
+                                <p>by <a>Jonny Meinke</a></p>
+                            </header>
+                           <div>
+                                <div class="card__img-container">
+                                        <img class="card__img" src="img/post3.jpg" alt="post3">
+                                    </div>
+                                    <p>
+                                        Are you tired of templates? Because I`m not! <strong>Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
+                                        Sapiente reprehenderit illum amet sed ex, minima deleniti cum explicabo atque minus, 
+                                        ratione excepturi consectetur necessitatibus eaque soluta eligendi delectus? Fugiat, consequuntur!</strong>
+                                    </p>
+                                    <p>Rating: 106 <a title="Rate!" href="#" class="fas fa-star"></a></p>
+                           </div>
+                    </article>
+                    <article class="card">
+                                <header class="card__header">
+                                    <h3>Some random post heading:3</h3>
+                                    <p>8 d ago</p>
+                                    <p>by <a>Liana Winterniz</a></p>
+                                </header>
+                                <div>
+                                    <div class="card__img-container">
+                                        <img class="card__img" src="img/post4.jpg" alt="post4">
+                                    </div>
+                                    <p>
+                                        Oh, no,not again!!!
+                                        <strong>Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci similique unde deserunt repellendus, 
+                                        id cum exercitationem distinctio atque minus perferendis! 
+                                        Nesciunt quo iusto dignissimos, rem ipsa amet distinctio consectetur earum.</strong>
+                                    </p>
+                                    <p>Rating: 320 <a title="Rate!" href="#" class="fas fa-star"></a></p>
+                                </div>
+                        </article>
+                        <article class="card">
+                                    <header class="card__header">
+                                        <h3>Some random post heading:4</h3>
+                                        <p>2 w ago</p>
+                                        <p>by <a>Daniel Replogle</a></p>
+                                    </header>
+                                    <div>
+                                            <div class="card__img-container">
+                                                    <img class="card__img" src="img/post5.jpg" alt="post5">
+                                                </div>
+                                                <p>
+                                                    Surprise!🎉🎉🎉🎉🎉🎉
+                                                    <strong>Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
+                                                    Asperiores nobis nostrum obcaecati quaerat, officia deleniti corporis perferendis 
+                                                    iure ut in hic suscipit repudiandae pariatur quibusdam facere?
+                                                     Voluptatem dolorem deserunt ipsum!</strong>
+                                                </p>
+                                                <p>Rating: 320 <a title="Rate!" href="#" class="fas fa-star"></a></p>
+                                    </div>
+                    </article>
+           </div>
+        </main>
+        <aside id="author" class="author">
+            <section class="aside__section">
+                <header class="aside__header"><h2>Creator`s/company`s name</h2></header>
+                <img class="author__img" src="img/author.jpg" alt="author`s photo">
+                <p>Here will be a brief information about the creator / company. I will add another meaningless phrase
+                    and smiles to take some more space.
+                    🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥
+                    🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥
+                </p>
+            </section>
+        </aside>
+        <aside id="aside" class="aside">
+            <section class="aside__section aside__section--soc">
+                <header class="aside__header"><h2>Social media</h2></header>
+                <ul class="soc soc--a">
+                    <li><a class="fab fa-facebook-f" href="#"></a></li>
+                    <li><a class="fab fa-youtube" href="#"></a></li>
+                    <li><a class="fab fa-instagram" href="#"></a></li>
+                </ul>
+            </section>
+            <section class="aside__section aside__section--sub">
+                <header class="aside__header"><h2>Subscribe us</h2></header>
+                <form action="#">
+                    <input type="text" placeholder="your name">
+                    <input type="email" placeholder="your@mail.com">
+                    <input type="submit" value="Subscribe">
+                </form>
+            </section>
+            <section class="aside__section aside__section--srch">
+                <header class="aside__header"><h2>Search</h2></header>
+                <nav>
+                    <input type="text">
+                    <a class="search fas fa-search" href="#"></a>
+                </nav>
+            </section>
+            <section class="aside__section aside__section--tags">
+                <header class="aside__header"><h2>Popular</h2></header>
+                <ul class="tags">
+                    <li><a href="#">here</a></li>
+                    <li><a href="#">will</a></li>
+                    <li><a href="#">be</a></li>
+                    <li><a href="#">tags</a></li>
+                    <li><a href="#">or</a></li>
+                    <li><a href="#">keywords</a></li>
+                </ul>
+            </section>
+            <section class="aside__section aside__section--comments">
+                <header class="aside__header"><h2>Comments</h2></header>
+                <ul>
+                    <li>
+                        <article class="comment">
+                            <img class="comment__img" src="img/user1.png" alt="Anna user photo">
+                            <header class="comment__header">
+                                <a href="#"><h4>Anna</h4></a>
+                                <p>12.03.2019</p>
+                            </header>
+                            <p  class="comment__text">Thank you so much!</p>
+                        </article>
+                    </li>
+                    <li>
+                        <article class="comment">
+                            <img class="comment__img" src="img/user2.png" alt="David user photo">
+                            <header  class="comment__header">
+                                <a href="#"><h4>David</h4></a>
+                                <p>25.05.2019</p>
+                            </header>
+                            <p  class="comment__text">😋</p>
+                        </article>
+                    </li>
+                    <li>
+                        <article class="comment">
+                            <img class="comment__img" src="img/user4.png" alt="Pizza Lover user photo">
+                            <header  class="comment__header">
+                                <a href="#"><h4>Hater</h4></a>
+                                <p>08.07.2019</p>
+                            </header>
+                            <p  class="comment__text">💩💩💩💩💩💩💩💩💩💩💩💩💩💩💩💩💩💩💩💩💩💩💩</p>
+                        </article>
+                    </li>
+                    <li>
+                        <article class="comment">
+                            <img class="comment__img" src="img/user3.png" alt="Mr Jonson photo">
+                            <header  class="comment__header">
+                                <a href="#"><h4>Mr. Jonson</h4></a>
+                                <p>08.07.2019</p>
+                            </header>
+                            <p  class="comment__text">🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥 </p>
+                        </article>
+                    </li>
+                </ul>
+            </section>
+        </aside>
+        <footer>
+            <div class="footer__wrp">
+                <div class="logo logo--f">
+                    <img width="100" src="./img/logo.svg" alt="logo">
+                </div>
+                <p>© 2019 PizzaForAll</p>
+                <ul class="soc soc--f" id="contact">
+                    <li><a class="fab fa-facebook-f" href="#"></a></li>
+                    <li><a class="fab fa-youtube" href="#"></a></li>
+                    <li><a class="fab fa-instagram" href="#"></a></li>
+                </ul>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>
