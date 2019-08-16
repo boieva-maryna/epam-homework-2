@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css?family=Inconsolata&display=swap');
 *{
     box-sizing: border-box;
     list-style: none;
@@ -5,6 +6,7 @@
     margin: 0;
     padding: 0;
     color:#2b2723;
+    font-family: 'Inconsolata', monospace;
 }
 body{
     background-color: #FFFFF3;
@@ -54,17 +56,17 @@ footer{
 .header__wrp,.footer__wrp{
     display:grid;
 }
-.logo--h{
-    grid-area: logo--h;
+.header__logo{
+    grid-area: header__logo;
 }
-.menu--h{
-    grid-area: menu--h;
+.header__menu{
+    grid-area: header__menu;
 }
 .soc,.menu>ul{
     display: flex;
 }
-.soc--h{
-    grid-area: soc--h;
+.header__soc{
+    grid-area: header__soc;
 }
 .search--h{
     grid-area: search--h;
@@ -150,7 +152,7 @@ footer{
     "aside"
     "footer"
    }
-   .soc--h{
+   .header__soc{
        display: none;
    }
 .menu-toggle {
@@ -259,11 +261,11 @@ footer{
     display: block;
     width: 80px;
 }
-.logo--h{
+.header__logo{
   grid-column: 1/3;
   grid-row: 2/3;
 }
-.soc--f,.soc--a{
+.footer__soc,.aside__soc{
   display: flex;
   justify-content: space-between;
 }
@@ -297,15 +299,15 @@ footer{
         height: 100px;
     }
     .header__wrp{
-           grid-template-areas: "logo--h . . . search--h soc--h"
-        "logo--h . . . menu--h menu--h";
+           grid-template-areas: "header__logo . . . search--h header__soc"
+        "header__logo . . . header__menu header__menu";
     }
-    .soc--f{
+    .footer__soc{
         grid-column: 2/3;
         grid-row: 1/3;
         align-self: center;
     }
-    .logo--f{
+    .footer__logo{
         grid-column: 1/2;
         grid-row: 1/2;
     }
